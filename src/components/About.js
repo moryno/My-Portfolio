@@ -4,7 +4,7 @@ import AboutImg from "../images/me-bg.png";
 const About = () => {
   return (
     <main className="w-full">
-      <section className="container mx-auto p-5 md:py-20  ">
+      <section className="container mx-auto p-5 md:py-20 ">
         <article>
           <h1 className="font-bold text-2xl md:text-4xl">About me</h1>
           <p className="text-slate-800">Get to know me</p>

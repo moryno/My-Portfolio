@@ -3,7 +3,7 @@ import Profile from "../images/sus.jpg";
 
 const Sidebar = () => {
   return (
-    <main className="hidden  md:block  min-h-screen lg:w-2/12 lg:p-5 text-center bg-background text-white">
+    <main className="hidden md:block sticky top-0  h-screen lg:w-2/12 lg:p-5 text-center bg-background text-white">
       <section className="flex flex-col items-center ">
         <img
           className="w-20 h-20 rounded-full object-cover cursor-pointer my-5"

@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Projects = () => {
-  const [isShown, setIsShown] = useState(false);
-
   return (
     <main className="">
       <section className="container mx-auto p-5 ">
@@ -18,11 +16,7 @@ const Projects = () => {
           </p>
         </article>
         <article className="flex justify-between flex-wrap ">
-          <div
-            className="p-5 box-border bg-indigo-500 shadow-xl w-full h-card md:w-5/12 lg:w-medium xl:w-medium  flex flex-col gap-3 my-3 md:my-8 relative"
-            onMouseEnter={() => setIsShown(true)}
-            onMouseLeave={() => setIsShown(false)}
-          >
+          <div className="p-5 group/item box-border bg-indigo-500 shadow-xl w-full h-card md:w-5/12 lg:w-medium xl:w-medium  flex flex-col gap-3 my-3 md:my-8 relative">
             <img
               className=" h-3/5  object-cover cursor-pointer self-center"
               src="https://v4.mui.com/static/logo.png"
@@ -32,18 +26,13 @@ const Projects = () => {
             <p className="text-neutral-800 text-center font-semibold">
               ONLINE PHARMACY
             </p>
-            {isShown && (
-              <div className="w-full h-full absolute text-white top-0 left-0 bg-cardHover flex gap-4 items-center justify-center flex-col cursor-pointer z-20">
-                <h1 className="font-semibold text-lg">Medicine</h1>
-                <span className="text-title text-sm">More Info</span>
-              </div>
-            )}
+
+            <div className="w-full invisible group-hover/item:visible h-full absolute text-white top-0 left-0 bg-cardHover flex gap-4 items-center justify-center flex-col cursor-pointer  z-20">
+              <h1 className="font-semibold text-lg">Medicine</h1>
+              <span className="text-title text-sm">More Info</span>
+            </div>
           </div>
-          <div
-            className="p-5 box-border bg-indigo-500 shadow-xl w-full h-card md:w-5/12 lg:w-medium xl:w-medium  flex flex-col gap-3 my-3 md:my-8 relative"
-            onMouseEnter={() => setIsShown(true)}
-            onMouseLeave={() => setIsShown(false)}
-          >
+          <div className="p-5 group/item box-border bg-indigo-500 shadow-xl w-full h-card md:w-5/12 lg:w-medium xl:w-medium  flex flex-col gap-3 my-3 md:my-8 relative">
             <img
               className=" h-3/5  object-cover cursor-pointer self-center"
               src="https://v4.mui.com/static/logo.png"
@@ -53,18 +42,13 @@ const Projects = () => {
             <p className="text-neutral-800 text-center font-semibold">
               ONLINE PHARMACY
             </p>
-            {isShown && (
-              <div className="w-full h-full absolute text-white top-0 left-0 bg-cardHover flex gap-4 items-center justify-center flex-col cursor-pointer z-20">
-                <h1 className="font-semibold text-lg">Medicine</h1>
-                <span className="text-title text-sm">More Info</span>
-              </div>
-            )}
+
+            <div className="w-full invisible group-hover/item:visible h-full absolute text-white top-0 left-0 bg-cardHover flex gap-4 items-center justify-center flex-col cursor-pointer  z-20">
+              <h1 className="font-semibold text-lg">Medicine</h1>
+              <span className="text-title text-sm">More Info</span>
+            </div>
           </div>
-          <div
-            className="p-5 box-border bg-indigo-500 shadow-xl w-full h-card md:w-5/12 lg:w-medium xl:w-medium  flex flex-col gap-3 my-3 md:my-8 relative"
-            onMouseEnter={() => setIsShown(true)}
-            onMouseLeave={() => setIsShown(false)}
-          >
+          <div className="p-5 group/item box-border bg-indigo-500 shadow-xl w-full h-card md:w-5/12 lg:w-medium xl:w-medium  flex flex-col gap-3 my-3 md:my-8 relative">
             <img
               className=" h-3/5  object-cover cursor-pointer self-center"
               src="https://v4.mui.com/static/logo.png"
@@ -74,12 +58,11 @@ const Projects = () => {
             <p className="text-neutral-800 text-center font-semibold">
               ONLINE PHARMACY
             </p>
-            {isShown && (
-              <div className="w-full h-full absolute text-white top-0 left-0 bg-cardHover flex gap-4 items-center justify-center flex-col cursor-pointer z-20">
-                <h1 className="font-semibold text-lg">Medicine</h1>
-                <span className="text-title text-sm">More Info</span>
-              </div>
-            )}
+
+            <div className="w-full invisible group-hover/item:visible h-full absolute text-white top-0 left-0 bg-cardHover flex gap-4 items-center justify-center flex-col cursor-pointer  z-20">
+              <h1 className="font-semibold text-lg">Medicine</h1>
+              <span className="text-title text-sm">More Info</span>
+            </div>
           </div>
         </article>
       </section>

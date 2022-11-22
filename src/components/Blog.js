@@ -16,18 +16,16 @@ const Blog = () => {
                 src="https://v4.mui.com/static/logo.png"
                 alt="projectImg"
               />
-              <span className="bg-title text-white py-1 px-3 w-fit absolute bottom-0 left-0">
+              <span className="bg-title text-white py-0.5 text-xs px-3 w-fit absolute bottom-0 left-0">
                 15 Nov, 19
               </span>
             </div>
-            <h1 className="font-bold text-xl">Introduction To UX/UI</h1>
-            <p className="text-gray-500">
+            <h1 className="font-bold text-lg">Introduction To UX/UI</h1>
+            <p className="text-gray-400 text-sm">
               I am a creative problem solver. I build fullstack web
-              applications. I use React, TypeScript, JavaScript, Node.js,
-              MongoDB, SQL, HTML, and CSS. I have highlighted my key technical
-              skills that I will bring to your project.
+              applications.
             </p>
-            <p className="w-1/2 my-1  text-title">
+            <p className="text-title text-sm">
               <span className=" font-semibold text-md  text-black">Tags: </span>
               UI
             </p>
@@ -39,18 +37,16 @@ const Blog = () => {
                 src="https://v4.mui.com/static/logo.png"
                 alt="projectImg"
               />
-              <span className="bg-title text-white py-1 px-3 w-fit absolute bottom-0 left-0">
+              <span className="bg-title text-white py-0.5 text-xs px-3 w-fit absolute bottom-0 left-0">
                 15 Nov, 19
               </span>
             </div>
-            <h1 className="font-bold text-xl">Introduction To UX/UI</h1>
-            <p className="text-gray-500">
+            <h1 className="font-bold text-lg">Introduction To UX/UI</h1>
+            <p className="text-gray-400 text-sm">
               I am a creative problem solver. I build fullstack web
-              applications. I use React, TypeScript, JavaScript, Node.js,
-              MongoDB, SQL, HTML, and CSS. I have highlighted my key technical
-              skills that I will bring to your project.
+              applications.
             </p>
-            <p className="w-1/2 my-1  text-title">
+            <p className="text-title text-sm">
               <span className=" font-semibold text-md  text-black">Tags: </span>
               UI
             </p>
@@ -62,18 +58,16 @@ const Blog = () => {
                 src="https://v4.mui.com/static/logo.png"
                 alt="projectImg"
               />
-              <span className="bg-title text-white py-1 px-3 w-fit absolute bottom-0 left-0">
+              <span className="bg-title text-white py-0.5 text-xs px-3 w-fit absolute bottom-0 left-0">
                 15 Nov, 19
               </span>
             </div>
-            <h1 className="font-bold text-xl">Introduction To UX/UI</h1>
-            <p className="text-gray-500">
+            <h1 className="font-bold text-lg">Introduction To UX/UI</h1>
+            <p className="text-gray-400 text-sm">
               I am a creative problem solver. I build fullstack web
-              applications. I use React, TypeScript, JavaScript, Node.js,
-              MongoDB, SQL, HTML, and CSS. I have highlighted my key technical
-              skills that I will bring to your project.
+              applications.
             </p>
-            <p className="w-1/2 my-1  text-title">
+            <p className="text-title text-sm">
               <span className=" font-semibold text-md  text-black">Tags: </span>
               UI
             </p>

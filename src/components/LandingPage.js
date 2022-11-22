@@ -4,7 +4,7 @@ import Typical from "react-typical";
 
 const LandingPage = () => {
   return (
-    <main className="flex h-1/2 lg:h-screen">
+    <main className="flex h-1/2 md:h-96 lg:h-screen">
       <section className="flex items-center  justify-center w-full  bg-gradient-to-r from-neutral-600 to-neutral-600 relative">
         <img
           className="w-full h-full object-cover absolute mix-blend-overlay"

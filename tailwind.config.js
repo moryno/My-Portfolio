@@ -19,6 +19,9 @@ module.exports = {
       width: {
         small: "23%",
         medium: "30%",
+        form: "49%",
+        formLg: "45%",
+        side: "256px",
       },
     },
     screens: {
