@@ -31,59 +31,44 @@ const Projects = () => {
         </article>
         <article className="flex justify-between flex-wrap ">
           {projects.map((project) => {
-            let bg;
-            switch (project.id) {
-              case 1:
-                bg = "#f5fafd";
-                break;
-              case 2:
-                bg = "#fcf1ed";
-                break;
-              case 3:
-                bg = "#fbf0f4";
-                break;
-              default:
-                break;
-            }
-
+            console.log(project.bg);
+            console.log(project.id);
             return (
-              <>
-                <div
-                  key={project.id}
-                  className={`p-5 group/item box-border bg-${bg} shadow-xl w-full h-card md:w-5/12 lg:w-medium xl:w-medium  flex flex-col gap-3 my-3 md:my-8 relative`}
-                >
-                  <img
-                    className=" h-3/5  object-cover cursor-pointer self-center"
-                    src={project.image}
-                    alt="projectImg"
-                  />
-                  <h1 className="font-bold text-3xl  text-center">
-                    {project.title.toUpperCase()}
-                  </h1>
-                  <p className="text-neutral-800 text-center font-semibold">
-                    {project.label.toUpperCase()}
-                  </p>
-
-                  <div className="w-full invisible group-hover/item:visible h-full absolute text-white top-0 left-0 bg-cardHover flex gap-4 items-center justify-center flex-col cursor-pointer  z-20">
-                    <h1 className="font-semibold text-lg">{project.title}</h1>
-                    <span
-                      className="text-title text-sm transition ease-in-out hover:scale-110 "
-                      onClick={() => showPortal(project.id)}
-                    >
-                      More Info
-                    </span>
-                  </div>
-                </div>
-                <Portal
-                  project={filteredProject}
-                  isShown={isShown}
-                  onClose={() => setShow(false)}
+              <div
+                key={project.id}
+                className={`p-5 group/item box-border bg-[${project.bg}]  shadow-xl w-full h-card md:w-5/12 lg:w-medium xl:w-medium  flex flex-col gap-3 my-3 md:my-8 relative`}
+              >
+                <img
+                  className=" h-3/5  object-cover cursor-pointer self-center"
+                  src={project.image}
+                  alt="projectImg"
                 />
-              </>
+                <h1 className="font-bold text-3xl  text-center">
+                  {project.title.toUpperCase()}
+                </h1>
+                <p className="text-neutral-800 text-center font-semibold">
+                  {project.label.toUpperCase()}
+                </p>
+
+                <div className="w-full invisible group-hover/item:visible h-full absolute text-white top-0 left-0 bg-cardHover flex gap-4 items-center justify-center flex-col cursor-pointer  z-20">
+                  <h1 className="font-semibold text-lg">{project.title}</h1>
+                  <span
+                    className="text-title text-sm transition ease-in-out hover:scale-110 "
+                    onClick={() => showPortal(project.id)}
+                  >
+                    More Info
+                  </span>
+                </div>
+              </div>
             );
           })}
         </article>
       </section>
+      <Portal
+        project={filteredProject}
+        isShown={isShown}
+        onClose={() => setShow(false)}
+      />
     </main>
   );
 };

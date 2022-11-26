@@ -1,7 +1,6 @@
 import React from "react";
 import {
   GitHub,
-  Instagram,
   LinkedIn,
   Map,
   Phone,
@@ -13,33 +12,33 @@ const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <main className="w-full flex flex-col gap-5 bg-background text-gray-300 text-sm p-2 sm:p-5 md:p-10">
-      <section className="flex flex-col lg:flex-row gap-2 container items-center mx-auto justify-between p-2 sm:p-5">
-        <article className="flex items-center flex-col gap-2">
+      <section className="hidden sm:flex  lg:flex-row gap-2 container items-center mx-auto justify-between p-2 sm:p-5">
+        <article className="flex items-center flex-col gap-3">
           {" "}
           <div className="flex items-center justify-center rounded-full w-5 h-5 text-title">
-            <Map />
+            <Map fontSize="large" />
           </div>
           {"  "}
           Nairobi, Kenya
         </article>
-        <article className="flex items-center flex-col gap-2">
+        <article className="flex items-center flex-col gap-3">
           {" "}
           <div className="flex items-center justify-center rounded-full w-5 h-5 text-title">
-            <Phone />
+            <Phone fontSize="large" />
           </div>
           {"  "}
           (+254) 715 018 410
         </article>
-        <article className="flex items-center flex-col gap-2">
+        <article className="flex items-center flex-col gap-3">
           {" "}
           <div className="flex items-center justify-center rounded-full w-5 h-5 text-title">
-            <Send />
+            <Send fontSize="large" />
           </div>
           {"  "}
           mauricenganga41@gmail.com
         </article>
       </section>
-      <hr className="container mx-auto  border-gray-600" />
+      <hr className="hidden sm:block container mx-auto  border-gray-600" />
       <section className="flex flex-col lg:flex-row gap-2 container items-center mx-auto justify-between  p-2 sm:p-5">
         <article className="flex gap-8">
           <a

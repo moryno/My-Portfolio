@@ -42,10 +42,8 @@ const About = () => {
                 <span className=" font-semibold text-md">Email: </span>{" "}
                 mauricenganga@gmail.com
               </p>{" "}
-              <p className="w-1/2 my-1  text-title">
-                <span className=" font-semibold text-md  text-black">
-                  Phone:{" "}
-                </span>
+              <p className="w-1/2 my-1  ">
+                <span className=" font-semibold text-md ">Phone: </span>
                 (254) 715 018 410
               </p>{" "}
               <p className="w-1/2 my-1 cursor-pointer text-title">
@@ -60,8 +58,10 @@ const About = () => {
                   https://github.com/moryno
                 </a>
               </p>{" "}
-              <p className="w-1/2 my-1">
-                <span className=" font-semibold text-md">LinkedIn: </span>
+              <p className="w-1/2 my-1 text-title">
+                <span className=" font-semibold text-md text-black">
+                  LinkedIn:{" "}
+                </span>
                 <a
                   href={`https://www.linkedin.com/in/mauricenganga`}
                   target="_blank"

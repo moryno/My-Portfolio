@@ -1,5 +1,6 @@
 import React from "react";
 import AboutImg from "../images/me-bg.png";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Sidebar = () => {
   return (
@@ -16,7 +17,7 @@ const Sidebar = () => {
         </section>
         <section className="">
           <ul className="flex flex-col items-center gap-10">
-            <li className="cursor-pointer transition ease-in-out hover:scale-110  hover:text-gray-300">
+            <li className="cursor-pointer transition  ease-in-out hover:scale-110  hover:text-gray-300">
               {" "}
               <a href={`#home`}>Home</a>
             </li>
