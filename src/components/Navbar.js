@@ -34,37 +34,37 @@ const Navbar = () => {
                 className="cursor-pointer hover:text-gray-300"
                 onClick={expand}
               >
-                Home
+                <a href={`#home`}>Home</a>
               </li>
               <li
                 className="cursor-pointer hover:text-gray-300"
                 onClick={expand}
               >
-                About
+                <a href={`#about`}>About</a>
               </li>
               <li
                 className="cursor-pointer hover:text-gray-300"
                 onClick={expand}
               >
-                Skills
+                <a href={`#skills`}>Skills</a>
               </li>
               <li
                 className="cursor-pointer hover:text-gray-300"
                 onClick={expand}
               >
-                Projects
+                <a href={`#projects`}>Projects</a>
               </li>
               <li
                 className="cursor-pointer hover:text-gray-300"
                 onClick={expand}
               >
-                Blog
+                <a href={`#blog`}>Blog</a>
               </li>
               <li
                 className="cursor-pointer hover:text-gray-300"
                 onClick={expand}
               >
-                Contact
+                <a href={`#contact`}>Contact</a>
               </li>
             </ul>
           )}

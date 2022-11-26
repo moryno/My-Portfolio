@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <main className="w-full">
+    <main id="contact" className="w-full">
       <section className="container mx-auto p-5 md:py-20  ">
         <article>
           <h1 className="font-bold text-2xl md:text-4xl">Get in touch</h1>

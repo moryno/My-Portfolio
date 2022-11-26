@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
+import Portal from "./Portal";
+import { projects } from "../helpers/projectSource";
 
 const Projects = () => {
+  const [isShown, setShow] = useState(false);
+  const [filteredProject, setFilteredProject] = useState({});
+
+  const showPortal = (id) => {
+    projects.filter((project) => {
+      if (project.id === id) {
+        setFilteredProject(project);
+      }
+    });
+    setShow(true);
+  };
+
   return (
-    <main className="">
+    <main id="projects">
       <section className="container mx-auto p-5 ">
         <article>
           <h1 className="font-bold text-2xl md:text-4xl">Projects</h1>
@@ -16,54 +30,58 @@ const Projects = () => {
           </p>
         </article>
         <article className="flex justify-between flex-wrap ">
-          <div className="p-5 group/item box-border bg-indigo-500 shadow-xl w-full h-card md:w-5/12 lg:w-medium xl:w-medium  flex flex-col gap-3 my-3 md:my-8 relative">
-            <img
-              className=" h-3/5  object-cover cursor-pointer self-center"
-              src="https://v4.mui.com/static/logo.png"
-              alt="projectImg"
-            />
-            <h1 className="font-bold text-3xl text-center">MEDICINE</h1>
-            <p className="text-neutral-800 text-center font-semibold">
-              ONLINE PHARMACY
-            </p>
+          {projects.map((project) => {
+            let bg;
+            switch (project.id) {
+              case 1:
+                bg = "#f5fafd";
+                break;
+              case 2:
+                bg = "#fcf1ed";
+                break;
+              case 3:
+                bg = "#fbf0f4";
+                break;
+              default:
+                break;
+            }
 
-            <div className="w-full invisible group-hover/item:visible h-full absolute text-white top-0 left-0 bg-cardHover flex gap-4 items-center justify-center flex-col cursor-pointer  z-20">
-              <h1 className="font-semibold text-lg">Medicine</h1>
-              <span className="text-title text-sm">More Info</span>
-            </div>
-          </div>
-          <div className="p-5 group/item box-border bg-indigo-500 shadow-xl w-full h-card md:w-5/12 lg:w-medium xl:w-medium  flex flex-col gap-3 my-3 md:my-8 relative">
-            <img
-              className=" h-3/5  object-cover cursor-pointer self-center"
-              src="https://v4.mui.com/static/logo.png"
-              alt="projectImg"
-            />
-            <h1 className="font-bold text-3xl text-center">MEDICINE</h1>
-            <p className="text-neutral-800 text-center font-semibold">
-              ONLINE PHARMACY
-            </p>
+            return (
+              <>
+                <div
+                  key={project.id}
+                  className={`p-5 group/item box-border bg-${bg} shadow-xl w-full h-card md:w-5/12 lg:w-medium xl:w-medium  flex flex-col gap-3 my-3 md:my-8 relative`}
+                >
+                  <img
+                    className=" h-3/5  object-cover cursor-pointer self-center"
+                    src={project.image}
+                    alt="projectImg"
+                  />
+                  <h1 className="font-bold text-3xl  text-center">
+                    {project.title.toUpperCase()}
+                  </h1>
+                  <p className="text-neutral-800 text-center font-semibold">
+                    {project.label.toUpperCase()}
+                  </p>
 
-            <div className="w-full invisible group-hover/item:visible h-full absolute text-white top-0 left-0 bg-cardHover flex gap-4 items-center justify-center flex-col cursor-pointer  z-20">
-              <h1 className="font-semibold text-lg">Medicine</h1>
-              <span className="text-title text-sm">More Info</span>
-            </div>
-          </div>
-          <div className="p-5 group/item box-border bg-indigo-500 shadow-xl w-full h-card md:w-5/12 lg:w-medium xl:w-medium  flex flex-col gap-3 my-3 md:my-8 relative">
-            <img
-              className=" h-3/5  object-cover cursor-pointer self-center"
-              src="https://v4.mui.com/static/logo.png"
-              alt="projectImg"
-            />
-            <h1 className="font-bold text-3xl text-center">MEDICINE</h1>
-            <p className="text-neutral-800 text-center font-semibold">
-              ONLINE PHARMACY
-            </p>
-
-            <div className="w-full invisible group-hover/item:visible h-full absolute text-white top-0 left-0 bg-cardHover flex gap-4 items-center justify-center flex-col cursor-pointer  z-20">
-              <h1 className="font-semibold text-lg">Medicine</h1>
-              <span className="text-title text-sm">More Info</span>
-            </div>
-          </div>
+                  <div className="w-full invisible group-hover/item:visible h-full absolute text-white top-0 left-0 bg-cardHover flex gap-4 items-center justify-center flex-col cursor-pointer  z-20">
+                    <h1 className="font-semibold text-lg">{project.title}</h1>
+                    <span
+                      className="text-title text-sm transition ease-in-out hover:scale-110 "
+                      onClick={() => showPortal(project.id)}
+                    >
+                      More Info
+                    </span>
+                  </div>
+                </div>
+                <Portal
+                  project={filteredProject}
+                  isShown={isShown}
+                  onClose={() => setShow(false)}
+                />
+              </>
+            );
+          })}
         </article>
       </section>
     </main>

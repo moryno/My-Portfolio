@@ -12,9 +12,12 @@ module.exports = {
       colors: {
         button: "#E6780D",
         title: "#FF830D",
+        twitter: "#55ACEE",
+        linkedin: "#0A66C2",
       },
       height: {
         card: "40vh",
+        large: "70vh",
       },
       width: {
         small: "23%",

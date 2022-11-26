@@ -1,7 +1,6 @@
 import Home from "../pages/Home";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
-import Portal from "./Portal";
 
 function App() {
   return (
@@ -11,7 +10,6 @@ function App() {
         <Sidebar />
         <Home />
       </section>
-      {/* <Portal /> */}
     </main>
   );
 }

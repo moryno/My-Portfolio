@@ -1,10 +1,10 @@
 import React from "react";
 import LandingImg from "../images/photo.jpg";
-import Typical from "react-typical";
+import { Typewriter } from "react-simple-typewriter";
 
 const LandingPage = () => {
   return (
-    <main className="flex h-1/2 md:h-96 lg:h-screen">
+    <main id="home" className="flex h-1/2 md:h-96 lg:h-screen">
       <section className="flex items-center  justify-center w-full  bg-gradient-to-r from-neutral-600 to-neutral-600 relative">
         <img
           className="w-full h-full object-cover absolute mix-blend-overlay"
@@ -17,19 +17,23 @@ const LandingPage = () => {
           </h1>
           <div className="font-bold text-white text-2xl md:text-2xl relative">
             I'm a{" "}
-            <Typical
-              loop={Infinity}
-              wrapper="s"
-              steps={[
+            <Typewriter
+              words={[
                 "FullStack Developer",
-                1000,
                 "Freelancer",
-                1000,
+                "Writer",
                 "Mobile Developer",
-                1000,
               ]}
+              loop={Infinity}
+              cursor
+              typeSpeed={100}
+              deleteSpeed={50}
+              delaySpeed={1000}
             />
           </div>
+          <button className="bg-button self-center text-white font-semibold py-2 px-3 w-fit cursor-pointer transition ease-in-out hover:scale-110  relative my-5">
+            <a href={`#contact`}>Hire me </a>
+          </button>
         </article>
       </section>
     </main>

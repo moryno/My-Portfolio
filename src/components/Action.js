@@ -11,8 +11,8 @@ const Action = () => {
             your project done.
           </p>
         </article>
-        <button className="bg-title text-white font-semibold py-2 px-8 w-fit cursor-pointer rounded-3xl">
-          Hire me
+        <button className="bg-title text-white font-semibold py-2 px-8 w-fit cursor-pointer transition ease-in-out hover:scale-110  rounded-3xl">
+          <a href={`#contact`}>Hire me</a>
         </button>
       </section>
     </main>

@@ -3,7 +3,7 @@ import { skillRows } from "../helpers/skillSource";
 
 const Skills = () => {
   return (
-    <main className="bg-skill">
+    <main id="skills" className="bg-skill">
       <section className="container mx-auto p-5 ">
         <article>
           <h1 className="font-bold text-2xl md:text-4xl">My Skills</h1>

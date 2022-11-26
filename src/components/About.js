@@ -1,9 +1,10 @@
 import React from "react";
 import AboutImg from "../images/me-bg.png";
+import Cv from "../images/Resume.pdf";
 
 const About = () => {
   return (
-    <main className="w-full">
+    <main id="about" className="w-full">
       <section className="container mx-auto p-5 md:py-20 ">
         <article>
           <h1 className="font-bold text-2xl md:text-4xl">About me</h1>
@@ -47,15 +48,27 @@ const About = () => {
                 </span>
                 (254) 715 018 410
               </p>{" "}
-              <p className="w-1/2 my-1 text-title">
+              <p className="w-1/2 my-1 cursor-pointer text-title">
                 <span className=" font-semibold text-md text-black">
                   Github:{" "}
                 </span>
-                https://github.com/moryno
+                <a
+                  href={`https://github.com/moryno/`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  https://github.com/moryno
+                </a>
               </p>{" "}
               <p className="w-1/2 my-1">
                 <span className=" font-semibold text-md">LinkedIn: </span>
-                maurice-nganga-a6668b213/
+                <a
+                  href={`https://www.linkedin.com/in/mauricenganga`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  /mauricenganga/
+                </a>
               </p>
               <p className="w-1/2 my-1">
                 <span className=" font-semibold text-md">From: </span> Nairobi,
@@ -64,10 +77,12 @@ const About = () => {
             </div>
             <div className="flex gap-5 mt-3">
               <button className="bg-title text-white font-semibold py-2 px-3 w-fit cursor-pointer rounded-3xl">
-                Download resume
+                <a href={Cv} download>
+                  Download resume
+                </a>
               </button>
               <button className="py-2 px-10 font-semibold w-fit cursor-pointer rounded-3xl ring-1 ring-slate-400">
-                My Work
+                <a href={`#projects`}>My Work</a>
               </button>
             </div>
           </article>
