@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <main className="md:hidden w-full  bg-background text-white">
-      <section className="container mx-auto py-5 flex items-center justify-between">
+      <section className="container mx-auto py-5 px-3 flex items-center justify-between">
         <article className="flex items-center gap-2">
           <img
             className="w-8 h-8 rounded-full object-cover cursor-pointer"
@@ -22,11 +22,11 @@ const Navbar = () => {
         <article>
           <div
             onClick={expand}
-            className="space-y-1 md:hidden cursor-pointer z-50"
+            className="space-y-1 p-1.5 bg-white md:hidden cursor-pointer z-50"
           >
-            <div className="w-6 h-0.5 bg-white"></div>
-            <div className="w-6 h-0.5 bg-white"></div>
-            <div className="w-6 h-0.5 bg-white"></div>
+            <div className="w-6 h-0.5 bg-black"></div>
+            <div className="w-6 h-0.5 bg-black"></div>
+            <div className="w-6 h-0.5 bg-black"></div>
           </div>
           {isExpanded && (
             <ul className=" absolute top-0 left-0 bg-neutral-900 text-white text-center rounded-b-3xl w-full space-y-10 p-10 z-20">

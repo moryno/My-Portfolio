@@ -25,7 +25,10 @@ const Blog = () => {
                   {blog.date}
                 </span>
               </div>
-              <h1 className="font-bold text-lg">{blog.title}</h1>
+              <a href={blog.link} target="_blank" rel="noreferrer">
+                <h1 className="font-bold text-lg">{blog.title}</h1>
+              </a>
+
               <p className="text-gray-600 text-sm">{blog.description}</p>
               <p className="text-title text-sm">
                 <span className=" font-semibold text-md  text-black">

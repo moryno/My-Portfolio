@@ -39,7 +39,7 @@ const Projects = () => {
                 className={`p-5 group/item box-border bg-[${project.bg}]  shadow-xl w-full h-card md:w-5/12 lg:w-medium xl:w-medium  flex flex-col gap-3 my-3 md:my-8 relative`}
               >
                 <img
-                  className=" h-3/5  object-cover cursor-pointer self-center"
+                  className=" h-3/5  cursor-pointer self-center"
                   src={project.image}
                   alt="projectImg"
                 />
