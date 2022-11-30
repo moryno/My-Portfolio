@@ -1,5 +1,5 @@
 import React from "react";
-import LandingImg from "../images/photo.jpg";
+import LandingImg from "../images/phot.jpg";
 import { Typewriter } from "react-simple-typewriter";
 
 const LandingPage = () => {
