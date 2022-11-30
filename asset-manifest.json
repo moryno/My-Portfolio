@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/My-Portfolio/static/css/main.2edcd335.css",
+    "main.js": "/My-Portfolio/static/js/main.b776c97f.js",
+    "static/media/eventguide.png": "/My-Portfolio/static/media/eventguide.3a70760e389ed0c84a87.png",
+    "static/media/sus.jpg": "/My-Portfolio/static/media/sus.4f72a02bdadc6f907e59.jpg",
+    "static/media/Tech.png": "/My-Portfolio/static/media/Tech.2e0d17fc3a73ed34823f.png",
+    "static/media/Weather.png": "/My-Portfolio/static/media/Weather.1c7a19bdafa59da58d8d.png",
+    "static/media/jwt.png": "/My-Portfolio/static/media/jwt.2317b794d1f38955722d.png",
+    "static/media/medication.png": "/My-Portfolio/static/media/medication.25713fdef5ab04701f1a.png",
+    "static/media/me-bg.png": "/My-Portfolio/static/media/me-bg.2b2e77f879c842b08ee1.png",
+    "static/media/phot.jpg": "/My-Portfolio/static/media/phot.e9ec08406958f32947a8.jpg",
+    "static/media/html5.png": "/My-Portfolio/static/media/html5.fd0f6a40f6429f1304cf.png",
+    "static/media/Resume.pdf": "/My-Portfolio/static/media/Resume.74b852aa0bf3d896dfba.pdf",
+    "static/media/mongodb.png": "/My-Portfolio/static/media/mongodb.4a9ea2f42903503634ad.png",
+    "static/media/gmail.jpg": "/My-Portfolio/static/media/gmail.ab0410c138f0e4a719c0.jpg",
+    "static/media/information.jpg": "/My-Portfolio/static/media/information.d36075a3988eb81e32d8.jpg",
+    "static/media/sql.png": "/My-Portfolio/static/media/sql.6b8fd7613bbe0ebad5df.png",
+    "index.html": "/My-Portfolio/index.html",
+    "main.2edcd335.css.map": "/My-Portfolio/static/css/main.2edcd335.css.map",
+    "main.b776c97f.js.map": "/My-Portfolio/static/js/main.b776c97f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2edcd335.css",
+    "static/js/main.b776c97f.js"
+  ]
+}
