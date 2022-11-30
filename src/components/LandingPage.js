@@ -5,7 +5,7 @@ import { Typewriter } from "react-simple-typewriter";
 const LandingPage = () => {
   return (
     <main id="home" className="flex h-1/2 md:h-96 lg:h-screen">
-      <section className="flex items-center  justify-center w-full  bg-gradient-to-r from-neutral-600 to-neutral-600 relative">
+      <section className="flex items-center  justify-center w-full  bg-gradient-to-r from-neutral-700 to-neutral-700 relative">
         <img
           className="w-full h-full object-cover absolute mix-blend-overlay"
           src={LandingImg}

@@ -6,6 +6,7 @@ module.exports = {
       backgroundColor: {
         skill: "#f8f6f8",
         background: "#121113",
+        linear: "rgba(0, 0, 0, 0.5)",
         hire: "#232123",
         cardHover: "rgba(0, 0, 0, 0.7)",
       },
