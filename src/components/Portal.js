@@ -40,7 +40,9 @@ const Portal = ({ isShown, onClose, project }) => {
               </p>{" "}
               <div className="w-1/2 my-1">
                 <p className=" font-semibold text-md">Technologies: </p>
-                {project.technologies.join(", ")}
+                <span className="text-title">
+                  {project.technologies.join(", ")}
+                </span>
               </div>
             </div>
             <div className="flex gap-10 mt-3">

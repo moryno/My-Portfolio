@@ -1,12 +1,6 @@
 import React from "react";
-import {
-  GitHub,
-  LinkedIn,
-  Map,
-  Phone,
-  Send,
-  Twitter,
-} from "@material-ui/icons";
+import { MdMap, MdPhone, MdSend } from "react-icons/md";
+import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -15,24 +9,24 @@ const Footer = () => {
       <section className="hidden sm:flex  lg:flex-row gap-2 container items-center mx-auto justify-between p-2 sm:p-5">
         <article className="flex items-center flex-col gap-3">
           {" "}
-          <div className="flex items-center justify-center rounded-full w-5 h-5 text-title">
-            <Map fontSize="large" />
+          <div className="flex items-center justify-center rounded-full  text-title">
+            <MdMap size={"1.5rem"} />
           </div>
           {"  "}
           Nairobi, Kenya
         </article>
         <article className="flex items-center flex-col gap-3">
           {" "}
-          <div className="flex items-center justify-center rounded-full w-5 h-5 text-title">
-            <Phone fontSize="large" />
+          <div className="flex items-center justify-center rounded-full  text-title">
+            <MdPhone size={"1.5rem"} />
           </div>
           {"  "}
           (+254) 715 018 410
         </article>
         <article className="flex items-center flex-col gap-3">
           {" "}
-          <div className="flex items-center justify-center rounded-full w-5 h-5 text-title">
-            <Send fontSize="large" />
+          <div className="flex items-center justify-center rounded-full  text-title">
+            <MdSend size={"1.5rem"} />
           </div>
           {"  "}
           mauricenganga41@gmail.com
@@ -46,8 +40,8 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <div className="flex items-center cursor-pointer transition ease-in-out hover:scale-110  justify-center rounded-full w-8 h-8">
-              <Twitter />
+            <div className="flex items-center cursor-pointer transition ease-in-out hover:scale-110  justify-center rounded-full">
+              <FaTwitter size={"1.5rem"} />
             </div>
           </a>
           <a
@@ -55,8 +49,8 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <div className="flex items-center cursor-pointer transition ease-in-out hover:scale-110  justify-center rounded-full w-8 h-8">
-              <GitHub />
+            <div className="flex items-center cursor-pointer transition ease-in-out hover:scale-110  justify-center rounded-full">
+              <FaGithub size={"1.5rem"} />
             </div>
           </a>
           <a
@@ -64,8 +58,8 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <div className="flex items-center cursor-pointer transition ease-in-out hover:scale-110 justify-center rounded-full w-8 h-8">
-              <LinkedIn />
+            <div className="flex items-center cursor-pointer transition ease-in-out hover:scale-110 justify-center rounded-full">
+              <FaLinkedin size={"1.5rem"} />
             </div>
           </a>
         </article>
