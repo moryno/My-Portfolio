@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Profile from "../images/sus.jpg";
+import AboutImg from "../images/me-bg.png";
 
 const Navbar = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -14,7 +14,7 @@ const Navbar = () => {
         <article className="flex items-center gap-2">
           <img
             className="w-8 h-8 rounded-full object-cover cursor-pointer"
-            src={Profile}
+            src={AboutImg}
             alt="profile"
           />
           <h2 className="text-xl font-bold ">Maurice Nganga</h2>

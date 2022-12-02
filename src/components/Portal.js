@@ -12,9 +12,9 @@ const Portal = ({ isShown, onClose, project }) => {
       >
         X
       </span>
-      <section className="container mx-auto p-5 md:py-20  ">
-        <article className="w-full flex mt-5 flex-col lg:flex-row items-center gap-20">
-          <article className="lg:w-5/12 flex items-center justify-center h-full">
+      <section className="container  mx-auto p-5 md:py-20  ">
+        <article className="w-full flex mt-5 flex-col lg:flex-row items-center gap-5 md:gap-20">
+          <article className="lg:w-5/12 flex items-center justify-center ">
             <img
               className=" object-cover"
               src={project.image}
@@ -26,6 +26,8 @@ const Portal = ({ isShown, onClose, project }) => {
               {project.title}
             </h1>
             <p className="text-slate-600 py-5">{project.description}</p>
+            <p className="text-slate-600 pb-5">{project.development}</p>
+
             <hr />
             <div className="py-5 flex flex-wrap justify-between w-full">
               <div className="w-1/2 my-1">

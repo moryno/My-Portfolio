@@ -1,6 +1,5 @@
 import React from "react";
 import AboutImg from "../images/me-bg.png";
-import { HashLink as Link } from "react-router-hash-link";
 
 const Sidebar = () => {
   return (

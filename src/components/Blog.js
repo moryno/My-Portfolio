@@ -13,7 +13,7 @@ const Blog = () => {
           {blogs.map((blog) => (
             <div
               key={blog.id}
-              className="p-5 box-border  shadow-md w-full md:w-5/12 lg:w-medium xl:w-medium  flex flex-col gap-3 my-3 md:my-8 relative"
+              className="p-5 box-border bg-white shadow-xl w-full md:w-5/12 lg:w-medium xl:w-medium  flex flex-col gap-3 my-3 md:my-8 relative"
             >
               <div className="relative flex items-center justify-center h-40">
                 <img

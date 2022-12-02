@@ -31,12 +31,11 @@ const Projects = () => {
         </article>
         <article className="flex justify-between flex-wrap ">
           {projects.map((project) => {
-            console.log(project.bg);
-            console.log(project.id);
             return (
               <div
                 key={project.id}
-                className={`p-5 group/item box-border bg-[${project.bg}]  shadow-xl w-full h-card md:w-5/12 lg:w-medium xl:w-medium  flex flex-col gap-3 my-3 md:my-8 relative`}
+                className={`p-5 group/item box-border  shadow-xl w-full h-card md:w-5/12 lg:w-medium xl:w-medium  flex flex-col gap-3 my-3 md:my-8 relative`}
+                style={{ backgroundColor: `${project.bg}` }}
               >
                 <img
                   className=" h-3/5  cursor-pointer self-center"
