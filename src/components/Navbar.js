@@ -13,7 +13,7 @@ const Navbar = () => {
       <section className="container mx-auto py-5 px-3 flex items-center justify-between">
         <article className="flex items-center gap-2">
           <img
-            className="w-8 h-8 rounded-full object-cover cursor-pointer"
+            className="w-8 h-8 bg-skill  rounded-full object-cover cursor-pointer"
             src={AboutImg}
             alt="profile"
           />
