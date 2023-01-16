@@ -5,7 +5,7 @@ const Portal = ({ isShown, onClose, project }) => {
   if (!isShown) return;
 
   return createPortal(
-    <main className="w-full  md:h-screen md:w-screen fixed top-0 bg-white left-0  opacity-0.9 flex items-center justify-center z-40 ">
+    <main className="w-full overflow-scroll  md:h-screen md:w-screen fixed top-0 bg-white left-0  opacity-0.9 flex items-center justify-center z-40 ">
       <span
         className="text-2xl text-gray-400 absolute cursor-pointer top-3 right-3 lg:top-5 lg:right-10 z-50  xl:right-20"
         onClick={onClose}
